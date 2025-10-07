@@ -20,13 +20,14 @@ Deploy your voice assistant to the cloud so you can access it from **any device,
 4. **Get credentials** from Settings → Keys:
    ```
    API Key: APIxxxxxxxxxxxx
-   API Secret: secretxxxxxxxxxxxx  
+   API Secret: secretxxxxxxxxxxxx
    Server URL: https://your-project.livekit.cloud
    ```
 
 ### Step 2: Deploy Frontend to Vercel (Global Access)
 
 #### A. Push to GitHub:
+
 ```bash
 # If you haven't already
 git add .
@@ -35,6 +36,7 @@ git push origin main
 ```
 
 #### B. Deploy to Vercel:
+
 1. **Go to [vercel.com](https://vercel.com)**
 2. **Sign in** with GitHub
 3. **Import Project** → Select your repository
@@ -49,11 +51,13 @@ git push origin main
 ### Step 3: Deploy LiveKit Agent (Voice Functionality)
 
 #### Option A: Quick Start (Recommended)
+
 1. **Go to [LiveKit Cloud Sandbox](https://cloud.livekit.io/projects/p_/sandbox/templates/agent-starter-python)**
 2. **Click "Deploy"** → This gives you a working agent instantly
 3. **Note the agent name** (usually `agent-starter-python`)
 
 #### Option B: Deploy to Railway
+
 1. **Fork [Python Agent](https://github.com/livekit-examples/agent-starter-python)**
 2. **Go to [railway.app](https://railway.app)**
 3. **Deploy from GitHub** → Select your forked agent
@@ -62,6 +66,7 @@ git push origin main
 ### Step 4: Connect Agent to Your App
 
 Update your `app-config.ts`:
+
 ```typescript
 export const APP_CONFIG_DEFAULTS: AppConfig = {
   // ... your existing config
@@ -79,6 +84,7 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
 ## 📱 Mobile Optimization Features
 
 Your app now includes:
+
 - **Responsive Design**: Adapts to all screen sizes
 - **Touch-Friendly**: Optimized for mobile interaction
 - **PWA Ready**: Can be installed as app on phone
@@ -86,15 +92,16 @@ Your app now includes:
 
 ## 🔧 Environment Variables Reference
 
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `LIVEKIT_API_KEY` | Your LiveKit API key | `APIxxxxxxxxxxxx` |
-| `LIVEKIT_API_SECRET` | Your LiveKit API secret | `secretxxxxxxxxxxxx` |
-| `LIVEKIT_URL` | Your LiveKit server URL | `https://project.livekit.cloud` |
+| Variable             | Description             | Example                         |
+| -------------------- | ----------------------- | ------------------------------- |
+| `LIVEKIT_API_KEY`    | Your LiveKit API key    | `APIxxxxxxxxxxxx`               |
+| `LIVEKIT_API_SECRET` | Your LiveKit API secret | `secretxxxxxxxxxxxx`            |
+| `LIVEKIT_URL`        | Your LiveKit server URL | `https://project.livekit.cloud` |
 
 ## 🌐 Access Your App
 
 Once deployed, your voice assistant will be accessible at:
+
 - **URL**: `https://your-app-name.vercel.app`
 - **From Any Device**: Phone, tablet, computer
 - **From Anywhere**: As long as you have internet
@@ -102,6 +109,7 @@ Once deployed, your voice assistant will be accessible at:
 ## 🎨 Design Preservation
 
 Your custom design elements are preserved:
+
 - ✅ Custom HUD background with animated particles
 - ✅ "Nate" branding and colors
 - ✅ Custom logo (`/ark_reactor.png`)
@@ -111,11 +119,13 @@ Your custom design elements are preserved:
 ## 🆓 Free Tier Limits
 
 **Vercel Free Tier:**
+
 - 100GB bandwidth/month
 - Unlimited deployments
 - Custom domains
 
 **LiveKit Cloud Free Tier:**
+
 - 10,000 participant minutes/month
 - 1 concurrent room
 - Perfect for personal use
@@ -130,6 +140,7 @@ Your custom design elements are preserved:
 4. **Voice not working**: Check microphone permissions on mobile
 
 ### Support:
+
 - [LiveKit Documentation](https://docs.livekit.io/)
 - [Vercel Documentation](https://vercel.com/docs)
 - [LiveKit Community Slack](https://livekit.io/join-slack)
@@ -137,6 +148,7 @@ Your custom design elements are preserved:
 ## 🎉 You're Done!
 
 Your Nate Voice Agent is now:
+
 - 🌍 **Globally accessible** from any device
 - 🎨 **Design preserved** with your custom HUD
 - 🎤 **Voice enabled** via LiveKit Cloud

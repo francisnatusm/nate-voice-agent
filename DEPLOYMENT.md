@@ -14,7 +14,7 @@ This guide will help you deploy your LiveKit Agent Starter React project to the 
 2. Create a new project or use an existing one
 3. Note down your:
    - API Key
-   - API Secret  
+   - API Secret
    - Server URL (e.g., `https://your-project.livekit.cloud`)
 
 ## Step 2: Deploy to Vercel
@@ -22,6 +22,7 @@ This guide will help you deploy your LiveKit Agent Starter React project to the 
 ### Option A: Deploy via Vercel Dashboard (Recommended)
 
 1. **Push to GitHub**:
+
    ```bash
    git add .
    git commit -m "Prepare for deployment"
@@ -37,6 +38,7 @@ This guide will help you deploy your LiveKit Agent Starter React project to the 
 
 3. **Configure Environment Variables**:
    In Vercel dashboard, go to your project → Settings → Environment Variables:
+
    ```
    LIVEKIT_API_KEY = your_api_key_here
    LIVEKIT_API_SECRET = your_api_secret_here
@@ -48,11 +50,13 @@ This guide will help you deploy your LiveKit Agent Starter React project to the 
 ### Option B: Deploy via Vercel CLI
 
 1. **Install Vercel CLI**:
+
    ```bash
    npm i -g vercel
    ```
 
 2. **Login and Deploy**:
+
    ```bash
    vercel login
    vercel --prod
@@ -61,7 +65,7 @@ This guide will help you deploy your LiveKit Agent Starter React project to the 
 3. **Set Environment Variables**:
    ```bash
    vercel env add LIVEKIT_API_KEY
-   vercel env add LIVEKIT_API_SECRET  
+   vercel env add LIVEKIT_API_SECRET
    vercel env add LIVEKIT_URL
    ```
 
@@ -70,10 +74,12 @@ This guide will help you deploy your LiveKit Agent Starter React project to the 
 Your deployed app will need a LiveKit agent to function. You have several options:
 
 ### Option A: Use LiveKit's Starter Agent
+
 - Deploy the [Python starter agent](https://github.com/livekit-examples/agent-starter-python)
 - Or the [Node.js starter agent](https://github.com/livekit-examples/agent-starter-node)
 
 ### Option B: Create Custom Agent
+
 - Follow the [LiveKit Agents documentation](https://docs.livekit.io/agents/start/voice-ai/)
 
 ## Step 4: Configure Your Agent
@@ -101,11 +107,11 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
 
 ## Environment Variables Reference
 
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `LIVEKIT_API_KEY` | Your LiveKit API key | `APIxxxxxxxxxxxx` |
-| `LIVEKIT_API_SECRET` | Your LiveKit API secret | `secretxxxxxxxxxxxx` |
-| `LIVEKIT_URL` | Your LiveKit server URL | `https://project.livekit.cloud` |
+| Variable             | Description             | Example                         |
+| -------------------- | ----------------------- | ------------------------------- |
+| `LIVEKIT_API_KEY`    | Your LiveKit API key    | `APIxxxxxxxxxxxx`               |
+| `LIVEKIT_API_SECRET` | Your LiveKit API secret | `secretxxxxxxxxxxxx`            |
+| `LIVEKIT_URL`        | Your LiveKit server URL | `https://project.livekit.cloud` |
 
 ## Troubleshooting
 
@@ -116,6 +122,7 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
 3. **Styling issues**: Verify all assets in `/public` folder are included
 
 ### Support:
+
 - [LiveKit Documentation](https://docs.livekit.io/)
 - [Vercel Documentation](https://vercel.com/docs)
 - [LiveKit Community Slack](https://livekit.io/join-slack)
@@ -123,8 +130,9 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
 ## Your Custom Configuration
 
 Your current configuration includes:
+
 - Company Name: "Nate"
-- Page Title: "Nate Voice Agent" 
+- Page Title: "Nate Voice Agent"
 - Custom logo: `/ark_reactor.png`
 - Custom accent colors: `#002cf2` (light) / `#1fd5f9` (dark)
 - Custom HUD background with animated particles

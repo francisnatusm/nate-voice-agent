@@ -30,12 +30,14 @@ You'll need a LiveKit agent to make your voice assistant work. Here are your opt
 ### Option B: Deploy Your Own Agent
 
 1. Clone the [Python starter agent](https://github.com/livekit-examples/agent-starter-python):
+
    ```bash
    git clone https://github.com/livekit-examples/agent-starter-python.git
    cd agent-starter-python
    ```
 
 2. Set up environment variables:
+
    ```bash
    export LIVEKIT_API_KEY=your_api_key
    export LIVEKIT_API_SECRET=your_api_secret
@@ -57,9 +59,9 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   companyName: 'Nate',
   pageTitle: 'Nate Voice Agent',
   pageDescription: 'An advanced AI voice assistant',
-  
+
   // ... your existing config ...
-  
+
   agentName: 'your-agent-name', // Add this line with your agent name
 };
 ```
@@ -68,11 +70,11 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
 
 When deploying to Vercel, you'll need to set these environment variables:
 
-| Variable | Value | Example |
-|----------|-------|---------|
-| `LIVEKIT_API_KEY` | Your API Key | `APIxxxxxxxxxxxx` |
-| `LIVEKIT_API_SECRET` | Your API Secret | `secretxxxxxxxxxxxx` |
-| `LIVEKIT_URL` | Your Server URL | `https://project.livekit.cloud` |
+| Variable             | Value           | Example                         |
+| -------------------- | --------------- | ------------------------------- |
+| `LIVEKIT_API_KEY`    | Your API Key    | `APIxxxxxxxxxxxx`               |
+| `LIVEKIT_API_SECRET` | Your API Secret | `secretxxxxxxxxxxxx`            |
+| `LIVEKIT_URL`        | Your Server URL | `https://project.livekit.cloud` |
 
 ## Testing Your Setup
 
@@ -101,6 +103,7 @@ When deploying to Vercel, you'll need to set these environment variables:
 ## Free Tier Limits
 
 LiveKit Cloud free tier includes:
+
 - 10,000 participant minutes per month
 - 1 concurrent room
 - Basic support

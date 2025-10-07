@@ -19,7 +19,7 @@ export const Welcome = ({
       ref={ref}
       inert={disabled}
       className={cn(
-        'bg-transparent fixed inset-0 mx-auto flex h-svh flex-col items-center justify-center text-center',
+        'fixed inset-0 mx-auto flex h-svh flex-col items-center justify-center bg-transparent text-center',
         disabled ? 'z-10' : 'z-20'
       )}
     >

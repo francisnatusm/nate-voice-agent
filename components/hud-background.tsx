@@ -1,15 +1,17 @@
 'use client';
 
-import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
+import { motion } from 'motion/react';
 
 export function HudBackground() {
-  const [particles, setParticles] = useState<Array<{
-    left: number;
-    top: number;
-    duration: number;
-    delay: number;
-  }>>([]);
+  const [particles, setParticles] = useState<
+    Array<{
+      left: number;
+      top: number;
+      duration: number;
+      delay: number;
+    }>
+  >([]);
 
   useEffect(() => {
     // Generate random particle data only on client side
