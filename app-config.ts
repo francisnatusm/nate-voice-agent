@@ -16,5 +16,5 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   accentDark: '#1fd5f9',
   startButtonText: 'Talk to Nate',
 
-  agentName: undefined,
+  agentName: 'nate-2q8xr9',
 };
